@@ -98,3 +98,8 @@ Keep a strong reference to NavigationTransitionController (property on root VC /
 Safe with interactive gestures. Cancelled pushes clean up gracefully.
 
 iOS 13+ support.
+
+## Screenshots
+| Slide          | Dissolve                                                               | Flip |
+| ----------------- | ------------------------------------------------------------------ |---------- |
+| ![App Screenshot](https://download.psvitamampang.com/api/public/dl/bppW1uI4?inline=true) | ![App Screenshot](https://download.psvitamampang.com/api/public/dl/Wu8rJL3g?inline=true) | ![App Screenshot](https://download.psvitamampang.com/api/public/dl/ntR9Nwn8?inline=true) |
