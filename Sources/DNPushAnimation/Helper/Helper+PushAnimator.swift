@@ -144,15 +144,24 @@ public extension PushAnimator {
                                   container: UIView,
                                   fromView: UIView,
                                   toView: UIView,
-                                  duration: TimeInterval) {
-        let opts: UIView.AnimationOptions = (direction == .push) ? .transitionFlipFromRight : .transitionFlipFromLeft
-        UIView.transition(from: fromView,
-                          to: toView,
-                          duration: duration,
-                          options: [opts, .showHideTransitionViews]) { finished in
-            ctx.completeTransition(finished && !ctx.transitionWasCancelled)
-        }
-    }
+                           duration: TimeInterval) {
+         let opts: UIView.AnimationOptions = (direction == .push) ? .transitionFlipFromRight : .transitionFlipFromLeft
+         if direction == .push {
+             UIView.transition(from: fromView,
+                               to: toView,
+                               duration: duration,
+                               options: [opts, .showHideTransitionViews]) { finished in
+                 ctx.completeTransition(finished && !ctx.transitionWasCancelled)
+             }
+         } else {
+             UIView.transition(from: toView,
+                               to: fromView,
+                               duration: duration,
+                               options: [opts, .showHideTransitionViews]) { finished in
+                 ctx.completeTransition(finished && !ctx.transitionWasCancelled)
+             }
+         }
+     }
     
      func runSlideAnimation(ctx: UIViewControllerContextTransitioning,
                                    container: UIView,

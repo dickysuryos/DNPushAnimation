@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemBackground
         if navTrans == nil, let nav = navigationController {
                     navTrans = nav.usePushAnimator(
-                        animationType: .slide, // 👈 choose .slide, .fade, .zoom
+                        animationType: .zoom, // 👈 choose .slide, .fade, .zoom
                         options: .init(duration: 1, dampingRatio: 0.9, parallax: 0.3),
                         interactivePop: true
                 )
@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         title.textColor = .white
         title.textAlignment = .center
         next.view.addSubview(title)
+        
         navigationController?.pushViewController(next, animated: true)
     }
 
