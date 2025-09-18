@@ -28,7 +28,7 @@ Xcode
 Or add to Package.swift
 
 ```swift
-.package(url: "https://github.com/your-org/PushAnimator.git", from: "1.1.0")
+.package(url: "https://github.com/dickysuryos/DNPushAnimation.git", from: "1.0.0")
 ```
 Then depend on it:
 ```swift
@@ -45,7 +45,7 @@ UIKit
 ```swift
 import Component from 'my-project'
 
-import DNPushAnimator
+import DNPushAnimation
 
 final class RootVC: UIViewController {
     private var navTrans: NavigationTransitionController?
@@ -66,7 +66,7 @@ final class RootVC: UIViewController {
 SwiftUI
 ```swift
 import SwiftUI
-import PushAnimator
+import DNPushAnimation
 
 @main
 struct DemoApp: App {
