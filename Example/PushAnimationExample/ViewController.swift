@@ -6,9 +6,9 @@
 //
 
 import UIKit
-
+import DNPushAnimation
 class ViewController: UIViewController {
-
+    private var navTransitionController: NavigationTransitionController?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,13 +19,14 @@ class ViewController: UIViewController {
         interactivePop: true
             )
         }
-
-
+        
         let button = UIButton(type: .system)
         button.setTitle("Push Next", for: .normal)
+//        button.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pushNext)))
         button.addTarget(self, action: #selector(pushNext), for: .touchUpInside)
         button.sizeToFit()
         button.center = view.center
+        button.isUserInteractionEnabled = true
         view.addSubview(button)
     }
     
