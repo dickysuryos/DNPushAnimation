@@ -1,5 +1,5 @@
 
-# 🚀 DNPushAnimator
+# 🚀 DNPushAnimation
 A lightweight, UIKit-first custom transition engine for UINavigationController
 with creative push/pop animations + interactive edge-swipe to pop.
 
