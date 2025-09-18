@@ -38,7 +38,7 @@ extension PushAnimator: UIViewControllerAnimatedTransitioning {
         case .flip:
         runFlipAnimation(ctx: ctx, container: container, fromView: fromView, toView: toView, duration: duration)
         case .card:
-        runCardAnimation(ctx: ctx, container: container, fromView: fromView, toView: toView, duration: duration)
+        runCardAnimation(ctx: ctx, container: container, fromView: fromView, toView: toView, height: height, duration: duration)
         case .drawer:
         runDrawerAnimation(ctx: ctx, container: container, fromView: fromView, toView: toView, width: width, height: height, duration: duration)
         case .scaleUp:
