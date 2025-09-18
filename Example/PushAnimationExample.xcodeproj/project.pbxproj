@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE3434742E7BE30000F18EA5 /* DNPushAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = FE3434732E7BE30000F18EA5 /* DNPushAnimation */; };
+		FE3434BA2E7BE92F00F18EA5 /* DNPushAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = FE3434B92E7BE92F00F18EA5 /* DNPushAnimation */; };
 		FEE402C42E79183C0001A2F4 /* DNPushAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = FEE402C32E79183C0001A2F4 /* DNPushAnimation */; };
 		FEE402C72E7918790001A2F4 /* DNPushAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = FEE402C62E7918790001A2F4 /* DNPushAnimation */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE402C42E79183C0001A2F4 /* DNPushAnimation in Frameworks */,
+				FE3434BA2E7BE92F00F18EA5 /* DNPushAnimation in Frameworks */,
 				FE3434742E7BE30000F18EA5 /* DNPushAnimation in Frameworks */,
 				FEE402C72E7918790001A2F4 /* DNPushAnimation in Frameworks */,
 			);
@@ -137,6 +139,7 @@
 				FEE402C32E79183C0001A2F4 /* DNPushAnimation */,
 				FEE402C62E7918790001A2F4 /* DNPushAnimation */,
 				FE3434732E7BE30000F18EA5 /* DNPushAnimation */,
+				FE3434B92E7BE92F00F18EA5 /* DNPushAnimation */,
 			);
 			productName = PushAnimationExample;
 			productReference = FEE402782E790E360001A2F4 /* PushAnimationExample.app */;
@@ -221,6 +224,7 @@
 			mainGroup = FEE4026F2E790E360001A2F4;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				FE3434B82E7BE92F00F18EA5 /* XCRemoteSwiftPackageReference "DNPushAnimation" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FEE402792E790E360001A2F4 /* Products */;
@@ -584,9 +588,25 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		FE3434B82E7BE92F00F18EA5 /* XCRemoteSwiftPackageReference "DNPushAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dickysuryos/DNPushAnimation";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		FE3434732E7BE30000F18EA5 /* DNPushAnimation */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = DNPushAnimation;
+		};
+		FE3434B92E7BE92F00F18EA5 /* DNPushAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE3434B82E7BE92F00F18EA5 /* XCRemoteSwiftPackageReference "DNPushAnimation" */;
 			productName = DNPushAnimation;
 		};
 		FEE402C32E79183C0001A2F4 /* DNPushAnimation */ = {
