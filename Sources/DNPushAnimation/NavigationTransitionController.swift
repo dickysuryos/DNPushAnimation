@@ -39,7 +39,7 @@ public final class NavigationTransitionController: NSObject, UINavigationControl
                                      animationControllerFor operation: UINavigationController.Operation,
                                      from fromVC: UIViewController,
                                      to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        let direction: Direction = (operation == .push) ? .push : .pop
+        let direction: PushAnimator.Direction = (operation == .push) ? .push : .pop
         return PushAnimator(type: animationType, direction: direction, options: options)
     }
 
