@@ -14,15 +14,15 @@ public extension UINavigationController {
     ///   - interactivePop: enable edge-swipe-to-pop
     /// - Returns: the transition controller (keep a strong reference!)
     @discardableResult
-    func usePushAnimator(animationType: PushAnimationType = .slide,
-                         options: PushAnimator.Options = .init(),
-                         interactivePop: Bool = true) -> NavigationTransitionController {
-        let controller = NavigationTransitionController(
-            navigationController: self,
-            animationType: animationType,
-            options: options
-        )
-        controller.isInteractivePopEnabled = interactivePop
-        return controller
+        func usePushAnimator(animationType: PushAnimationType = .slide,
+                             options: PushAnimator.Options = .init(),
+                             interactivePop: Bool = true) -> NavigationTransitionController {
+            let controller = NavigationTransitionController(
+                navigationController: self,
+                animationType: animationType,
+                options: options
+            )
+            controller.isInteractivePopEnabled = interactivePop
+            return controller
     }
 }
